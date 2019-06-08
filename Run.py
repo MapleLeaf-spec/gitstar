@@ -5,7 +5,7 @@ def GetScourse():
     choices = (1, 2, 3)
     filesNumber = random.choice(choices)
     fileadd = str(filesNumber) + ".txt"
-    with open(fileadd, 'w+') as Add:
+    with open(fileadd, 'a+') as Add:
         Add.write("1")
 def commit():
     os.system('git commit -a -m test_github_streak > /dev/null 2>&1')
@@ -24,10 +24,10 @@ def trick_commit():
     set_sys_time()
     GetScourse()
     commit()
-
-
-if __name__ == '__main__':
-    for x in range(600):
+def gitPush():
+    for x in range(400):
         trick_commit()
+if __name__ == '__main__':
+    gitPush()
 
 
