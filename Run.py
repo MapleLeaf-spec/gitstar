@@ -24,8 +24,11 @@ def set_sys_time():
 
 def trick_commit():
     set_sys_time()
+    print("设置时间执行完成")
     GetScourse()
+    print("获取资源执行完成")
     commit()
+    print("提交执行完成")
 def gitPush():
     for x in range(1):
         trick_commit()
