@@ -13,10 +13,10 @@ def commit():
 def set_sys_time():
     Month = random.randint(1, 12)
     Day = random.randint(1, 30)
-    year = (2018, 2019)
+    year = (2018, 2023)
     YearChoice = random.choice(year)
-    if YearChoice == 2019 and Month > 6:
-        NewMonth = random.randint(1, 5)
+    if YearChoice == 2023 and Month > 5:
+        NewMonth = random.randint(1, 4)
         Month = NewMonth
     os.system('date -s %04d%02d%02d' % (YearChoice, Month, Day))
 
