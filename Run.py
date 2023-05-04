@@ -8,6 +8,7 @@ def GetScourse():
     with open(fileadd, 'a+') as Add:
         Add.write("1")
 def commit():
+    print("开始提交")
     os.system('git commit -a -m test_github_streak')
 
 def set_sys_time():
