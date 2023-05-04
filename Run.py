@@ -18,7 +18,8 @@ def set_sys_time():
     if YearChoice == 2023 and Month > 5:
         NewMonth = random.randint(1, 4)
         Month = NewMonth
-    cmd = f'date {Month:02d}-{Day:02d}-{YearChoice}'
+    cmd = f'date {YearChoice}-{Month:02d}-{Day:02d}'
+    print(cmd)
     os.system(cmd)
 
 def trick_commit():
