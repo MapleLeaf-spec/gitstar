@@ -25,7 +25,7 @@ def trick_commit():
     GetScourse()
     commit()
 def gitPush():
-    for x in range(400):
+    for x in range(1):
         trick_commit()
 if __name__ == '__main__':
     gitPush()
